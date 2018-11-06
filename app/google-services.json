@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "343321005539",
+    "firebase_url": "https://clickshow-2a9cb.firebaseio.com",
+    "project_id": "clickshow-2a9cb",
+    "storage_bucket": "clickshow-2a9cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343321005539:android:5961e1c94fd284cd",
+        "android_client_info": {
+          "package_name": "com.example.carlos.appclickshow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343321005539-5ioim8c8n3rr1l5cv78b5at1nppcsg51.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.carlos.appclickshow",
+            "certificate_hash": "70bceb4a8b55d8c33b7f8b0f28af27700766584c"
+          }
+        },
+        {
+          "client_id": "343321005539-m22uqr7cm6rk1jnnddg0v9j1tegp179s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUP0QhtScWHzBjsswQet5454irj9b6fZU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343321005539-m22uqr7cm6rk1jnnddg0v9j1tegp179s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
