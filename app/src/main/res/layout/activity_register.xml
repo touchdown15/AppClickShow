@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtCadNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome"
+                android:inputType="textCapCharacters"/>
+
+            <EditText
+                android:id="@+id/edtCodCel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nº do celular"
+                android:inputType="phone"
+                android:digits="0123456789+" />
+
+            <EditText
+                android:id="@+id/edtCodEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/edtCodSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Senha"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/edtCodConfirmaSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirmar Senha"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/btnGravar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cadastrar"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

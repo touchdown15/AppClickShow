@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private Button btnAbrirActivityLogin;
+    private Button btnAbrirActivityCadastro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,12 +39,20 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         btnAbrirActivityLogin = (Button) findViewById(R.id.btnFazerLogin);
+        btnAbrirActivityCadastro = (Button) findViewById(R.id.btnFazerCadastro);
 
         btnAbrirActivityLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentAbrirTelaLogin = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intentAbrirTelaLogin);
+            }
+        });
+        btnAbrirActivityCadastro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAbrirTelaCadastro = new Intent(MainActivity.this, RegisterActivity.class);
+                startActivity(intentAbrirTelaCadastro);
             }
         });
     }
@@ -104,4 +113,6 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }

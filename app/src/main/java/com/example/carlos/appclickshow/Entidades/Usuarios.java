@@ -1,5 +1,12 @@
 package com.example.carlos.appclickshow.Entidades;
 
+import com.example.carlos.appclickshow.Config.ConfiguracaoFirebase;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.Exclude;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class Usuarios {
 
     private String id;
@@ -9,6 +16,27 @@ public class Usuarios {
     private String numeroCel;
 
     public Usuarios() {
+    }
+
+    public void salvar(){
+        DatabaseReference referencialFirebase = ConfiguracaoFirebase.getFirebase();
+        referencialFirebase.child("usuario").child(String.valueOf(getId())).setValue(this);
+
+    }
+
+    @Exclude
+
+    public Map<String,Object> toMap(){
+        HashMap<String,Object> hashMapUsuario = new HashMap<>();
+
+        hashMapUsuario.put("id", getId());
+        hashMapUsuario.put("email", getEmail());
+        hashMapUsuario.put("senha", getSenha());
+        hashMapUsuario.put("nome", getNome());
+        hashMapUsuario.put("numeroCel", getNumeroCel());
+
+        return hashMapUsuario;
+
     }
 
     public String getId() {
