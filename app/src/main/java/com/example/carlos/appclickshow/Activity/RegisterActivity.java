@@ -84,6 +84,7 @@ public class RegisterActivity extends AppCompatActivity {
                     String identificadorUsuario = Base64Custom.codificarBase64(usuarios.getEmail());
                     FirebaseUser usuarioFirebase = task.getResult().getUser();
                     usuarios.setId(identificadorUsuario);
+                    usuarios.setAdmin("No");
                     usuarios.salvar();
 
                     PreferenciasAndroid preferenciasAndroid = new PreferenciasAndroid(RegisterActivity.this);
@@ -115,7 +116,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     }
 
-    public void abrirLoginUsuario(){
+    private void abrirLoginUsuario(){
         Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
         startActivity(intent);
         finish();

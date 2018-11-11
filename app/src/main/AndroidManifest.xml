@@ -29,7 +29,14 @@
         </activity>
         <activity android:name=".Activity.LoginActivity" />
         <activity android:name=".Activity.LoggedActivity" />
-        <activity android:name=".Activity.RegisterActivity"></activity>
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity
+            android:name=".Activity.EventAdminActivity"
+            android:label="@string/title_activity_event_admin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activity.EventUsuarioActivity" />
+        <activity android:name=".Activity.CriarEventoActivity" />
+        <activity android:name=".Activity.PesquisarEventoActivity"></activity>
     </application>
 
 </manifest>

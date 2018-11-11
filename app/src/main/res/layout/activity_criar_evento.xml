@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CriarEventoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtIdEvento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Id Evento"
+                android:inputType="textCapCharacters"/>
+
+            <EditText
+                android:id="@+id/edtNomeEvento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome"
+                android:inputType="textCapCharacters"/>
+
+            <EditText
+                android:id="@+id/edtDescricaoEvento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descrição"
+                android:inputType="textCapCharacters"/>
+
+            <Button
+                android:id="@+id/btnGravarEvento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cadastrar"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

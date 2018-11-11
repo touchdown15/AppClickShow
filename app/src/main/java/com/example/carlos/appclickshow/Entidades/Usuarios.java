@@ -14,6 +14,7 @@ public class Usuarios {
     private String senha;
     private String nome;
     private String numeroCel;
+    private String admin;
 
     public Usuarios() {
     }
@@ -25,7 +26,6 @@ public class Usuarios {
     }
 
     @Exclude
-
     public Map<String,Object> toMap(){
         HashMap<String,Object> hashMapUsuario = new HashMap<>();
 
@@ -34,9 +34,18 @@ public class Usuarios {
         hashMapUsuario.put("senha", getSenha());
         hashMapUsuario.put("nome", getNome());
         hashMapUsuario.put("numeroCel", getNumeroCel());
+        hashMapUsuario.put("admin", getAdmin());
 
         return hashMapUsuario;
 
+    }
+
+    public String getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(String admin) {
+        this.admin = admin;
     }
 
     public String getId() {
@@ -55,10 +64,12 @@ public class Usuarios {
         this.email = email;
     }
 
+    @Exclude
     public String getSenha() {
         return senha;
     }
 
+    @Exclude
     public void setSenha(String senha) {
         this.senha = senha;
     }
