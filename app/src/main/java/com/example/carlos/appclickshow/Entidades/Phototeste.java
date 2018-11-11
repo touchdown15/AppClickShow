@@ -3,7 +3,6 @@ package com.example.carlos.appclickshow.Entidades;
 public class Phototeste {
 
     private String url;
-    private String idEvento;
 
     public Phototeste(){
 
