@@ -84,8 +84,7 @@ public class PesquisarEventoActivity extends AppCompatActivity {
                     Events event = objSnapshot.getValue(Events.class);
                     listEventos.add(event);
                 }
-
-
+                
                 arrayAdapterEventos = new ArrayAdapter<Events>(PesquisarEventoActivity.this,
                         android.R.layout.simple_list_item_1,listEventos);
                 listVPesquisa.setAdapter(arrayAdapterEventos);
