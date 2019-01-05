@@ -12,11 +12,12 @@
     tools:context=".Activity.LoginActivity">
 
     <EditText
-        android:layout_width="match_parent"
         android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="E-MAIL"
         android:inputType="textEmailAddress"
-        android:layout_height="wrap_content" />
+        android:text="oi" />
 
     <EditText
         android:layout_width="match_parent"
