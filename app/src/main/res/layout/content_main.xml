@@ -4,37 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Activity.MainActivity"
-    tools:showIn="@layout/app_bar_main">
+    tools:context=".Activity.LoginActivity">
 
-    <TextView
-        android:id="@+id/txtTitulo"
-        android:layout_width="wrap_content"
-        android:textSize="25sp"
-        android:layout_height="wrap_content"
-        android:text="ClickShow"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+    <ImageView
+        android:id="@+id/bgpro"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/screen1prancheta_1mdpi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnFazerLogin"
-        android:layout_width="113dp"
+        android:id="@+id/btnLogar"
+        android:layout_width="200dp"
         android:layout_height="60dp"
-        android:text="Login"
+        android:background="#ffffff"
+        android:text="Acessar Conta"
+        android:textColor="#993399"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598" />
+        app:layout_constraintVertical_bias="0.624" />
 
     <Button
         android:id="@+id/btnFazerCadastro"
-        android:layout_width="113dp"
+        android:layout_width="200dp"
         android:layout_height="60dp"
-        android:text="Cadastro"
+        android:background="@drawable/back3prancheta_1mdpi"
+        android:text="Criar Conta"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -42,5 +48,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.751" />
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="800dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bgpro"
+        app:srcCompat="@drawable/logoverticalprancheta_1mdpi" />
 
 </android.support.constraint.ConstraintLayout>
